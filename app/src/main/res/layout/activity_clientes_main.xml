@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainTables.ClientesMain"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_addClienteNuevo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_add"
+            />
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_delete"/>
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_edit"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/lstV_listaCliente"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        />
+
+</LinearLayout>

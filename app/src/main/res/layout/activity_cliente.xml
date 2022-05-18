@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cliente"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="25dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/txt_Cnombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            />
+        <EditText
+            android:id="@+id/txt_Capellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido"
+            />
+        <EditText
+            android:id="@+id/txt_Cfecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fecha"
+            android:inputType="date"
+            />
+        <EditText
+            android:id="@+id/txt_Cdireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Direccion"
+            />
+        <EditText
+            android:id="@+id/txt_Cclientescol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Clientescol"
+            />
+        <EditText
+            android:id="@+id/txt_Cdni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="DNI"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:id="@+id/btn_CagregarCliente"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_agregar"
+            />
+        <ImageButton
+            android:id="@+id/btn_CcancelarCliente"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_cancel"
+            />
+    </LinearLayout>
+
+</LinearLayout>
